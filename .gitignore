@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Log files
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Carpeta de dependencias globales de npm
+npm-debug.log
+
+# Archivos específicos del entorno
+.env
