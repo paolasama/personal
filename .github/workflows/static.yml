@@ -21,22 +21,32 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # Paso 1: Obtener el código de la rama
+      - name: Checkout code
         uses: actions/checkout@v4
 
+      # Paso 2: Configurar GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Copiar los archivos de la carpeta frontend a la raíz temporalmente
+      # Paso 3: Copiar los archivos del frontend a la raíz del repositorio
       - name: Copy frontend content to root
         run: |
-          cp -r frontend/* .  # Mueve todo el contenido de 'frontend' a la raíz
+          # Asegurarse de que la carpeta 'frontend' existe y contiene archivos
+          if [ -d "frontend" ]; then
+            cp -r frontend/* .  # Mueve todo el contenido de 'frontend' a la raíz
+          else
+            echo "La carpeta 'frontend' no existe o está vacía."
+            exit 1
+          fi
 
-      - name: Upload artifact
+      # Paso 4: Subir el contenido como artefacto para GitHub Pages
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'  # Subir todos los archivos de la raíz
 
+      # Paso 5: Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
