@@ -6,24 +6,59 @@
   <title>Portafolio - Paola Samaniego</title>
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2942/2942821.png">
+  <!-- Agregar el enlace a Font Awesome para los íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#acerca">Acerca de mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#competencias">Competencias</a>
+      <a href="#idiomas">Idiomas</a>
+    </div>
+  </nav>
+
   <header>
-    <h1>
-      Paola Samaniego
-    </h1>
+    <h1>Paola Samaniego</h1>
     <p>Desarrolladora Fullstack | React - Node.js - PostgreSQL | Ciberseguridad</p>
-    <p>Culiacán, Sinaloa | 📞 (667) 429 4569 | ✉️ mp.samaniego20@info.uas.edu.mx</p>
-    <p>🔗 <a href="https://github.com/paolasama" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/paola-samaniego21" target="_blank">LinkedIn</a></p>
+    <p>Culiacán, Sinaloa</p>
+    <div class="contact-info">
+      <!-- Enlace que lleva a WhatsApp al hacer clic sobre el ícono -->
+      <p><a href="https://wa.me/526674294569" target="_blank"><span class="icon">📞</span></a></p>
+      
+      <!-- Enlace de correo electrónico -->
+      <p><a href="mailto:mp.samaniego20@info.uas.edu.mx"><span class="icon">✉️</span></a></p>
+      
+      <!-- Enlaces con íconos de GitHub y LinkedIn -->
+      <p>
+        <a href="https://github.com/paolasama" target="_blank" class="icon-link">
+          <i class="fab fa-github"></i> GitHub
+        </a> 
+        | 
+        <a href="https://linkedin.com/in/paola-samaniego21" target="_blank" class="icon-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </p>
+
+      <!-- Enlace para abrir el CV en una nueva pestaña con ícono -->
+      <p>
+        <a href="https://drive.google.com/file/d/19YRyHPA_Gg0zCwjGkVoqFP8YCQPTspld/view?usp=sharing" target="_blank">
+          <i class="fas fa-file-pdf"></i>  CV
+        </a>
+      </p>
+    </div>
   </header>
 
-  <section>
+  <section id="acerca">
     <h2>Acerca de mí</h2>
     <p>Soy desarrolladora Fullstack especializada en React, Node.js y PostgreSQL, apasionada por crear aplicaciones web seguras, eficientes y escalables. Destaco por optimizar el rendimiento de software y bases de datos, y por liderar equipos aplicando metodologías ágiles como Scrum. Además, integro principios sólidos de ciberseguridad en cada proyecto que desarrollo.</p>
   </section>
 
-  <section>
+  <section id="experiencia">
     <h2>Experiencia Profesional</h2>
     <h3>Desarrolladora Fullstack | Nexgen Systems</h3>
     <p>Ene 2025 – Jun 2025</p>
@@ -34,14 +69,14 @@
     </ul>
   </section>
 
-  <section>
+  <section id="educacion">
     <h2>Educación</h2>
     <p><strong>Universidad Autónoma de Sinaloa</strong> (2020 - 2025)</p>
     <p>Licenciatura en Informática</p>
     <p>Proyecto destacado: Desarrollo de plataforma web segura para gestión académica universitaria.</p>
   </section>
 
-  <section>
+  <section id="habilidades">
     <h2>Habilidades Técnicas</h2>
     <ul>
       <li>Lenguajes: JavaScript, Python, PHP, SQL, C++, Bash, C, C#, Java</li>
@@ -54,7 +89,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="competencias">
     <h2>Competencias Profesionales</h2>
     <ul>
       <li>Desarrollo web Fullstack</li>
@@ -64,17 +99,7 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Habilidades Personales</h2>
-    <ul>
-      <li>Liderazgo efectivo y trabajo en equipo</li>
-      <li>Comunicación clara y asertiva</li>
-      <li>Resolución de conflictos</li>
-      <li>Pensamiento analítico y estratégico</li>
-    </ul>
-  </section>
-
-  <section>
+  <section id="idiomas">
     <h2>Idiomas</h2>
     <ul>
       <li>Español (Nativo)</li>
