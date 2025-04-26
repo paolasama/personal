@@ -32,8 +32,8 @@ jobs:
       # Paso 3: Copiar los archivos del frontend a la raíz del repositorio
       - name: Copy frontend content to root
         run: |
-          # Asegurarse de que la carpeta 'frontend' existe y contiene archivos
           if [ -d "frontend" ]; then
+            echo "La carpeta 'frontend' existe, moviendo archivos..."
             cp -r frontend/* .  # Mueve todo el contenido de 'frontend' a la raíz
           else
             echo "La carpeta 'frontend' no existe o está vacía."
