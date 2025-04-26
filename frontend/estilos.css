@@ -146,7 +146,7 @@ header .contact-info a:hover {
 
   /* Ajustar el tamaño de los enlaces del navbar para pantallas pequeñas */
   .navbar-container a {
-    font-size: 0.8em; /* Reducir aún más el tamaño de la fuente de los enlaces */
+    font-size: 0.6em; /* Reducir aún más el tamaño de la fuente de los enlaces */
     margin-left: 15px; /* Espaciado entre los enlaces */
   }
 
@@ -158,13 +158,13 @@ header .contact-info a:hover {
 
   /* Ajustar el tamaño del título para que se vea bien en pantallas pequeñas */
   header h1 {
-    font-size: 2.2em; /* Tamaño un poco más pequeño que el original */
+    font-size: 2em; /* Tamaño más pequeño que el anterior */
     margin-bottom: 15px; /* Añadir espacio debajo del título */
   }
 
   /* Ajustar el tamaño del texto para mejor legibilidad */
   header p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.5; /* Mejorar la legibilidad con mayor espacio entre líneas */
   }
 
