@@ -144,6 +144,12 @@ header .contact-info a:hover {
     padding: 0 15px; /* Añadir un poco de espaciado en los laterales */
   }
 
+  /* Ajustar el tamaño de los enlaces del navbar para pantallas pequeñas */
+  .navbar-container a {
+    font-size: 0.8em; /* Reducir aún más el tamaño de la fuente de los enlaces */
+    margin-left: 15px; /* Espaciado entre los enlaces */
+  }
+
   /* Sección: Ajustar márgenes y padding para adaptarse mejor en pantallas pequeñas */
   section {
     margin: 15px 10px; /* Márgenes más pequeños para evitar espacios grandes */
@@ -176,16 +182,11 @@ header .contact-info a:hover {
     margin-top: 10px; /* Espaciado adicional entre los elementos de la lista */
   }
 
-  /* Ajustar el tamaño de los enlaces dentro de la barra de navegación para dispositivos pequeños */
-  .navbar-container a {
-    font-size: 1em; /* Reducción del tamaño del texto de los enlaces */
-    margin-left: 15px; /* Espaciado entre los enlaces */
-  }
-
   /* Evitar que las imágenes o elementos desborden en pantallas pequeñas */
   img, video {
     max-width: 100%; /* Hacer que las imágenes y videos no se desborden */
     height: auto;
   }
 }
+
 
