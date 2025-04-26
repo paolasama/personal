@@ -2,32 +2,33 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"]  # El flujo se ejecuta cuando hay un push a la rama 'main'
+  workflow_dispatch:  # También se puede ejecutar manualmente desde GitHub
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read  # Permiso para leer el contenido del repositorio
+  pages: write  # Permiso para escribir en GitHub Pages
+  id-token: write  # Permiso para escribir un token de identificación
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages"  # Asegura que solo haya un despliegue a GitHub Pages por vez
+  cancel-in-progress: false  # No cancela el despliegue en curso si se activa otro
 
 jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}  # URL de la página desplegada
+    runs-on: ubuntu-latest  # El flujo de trabajo se ejecutará en un entorno de Ubuntu
+
     steps:
       # Paso 1: Obtener el código de la rama
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Extrae el código de la rama donde se ejecuta el flujo
 
       # Paso 2: Configurar GitHub Pages
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5  # Configura la integración de GitHub Pages
 
       # Paso 3: Copiar los archivos del frontend a la raíz del repositorio
       - name: Copy frontend content to root
@@ -37,16 +38,16 @@ jobs:
             cp -r frontend/* .  # Mueve todo el contenido de 'frontend' a la raíz
           else
             echo "La carpeta 'frontend' no existe o está vacía."
-            exit 1
+            exit 1  # Termina el flujo con un error si no encuentra la carpeta
           fi
 
       # Paso 4: Subir el contenido como artefacto para GitHub Pages
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # Subir todos los archivos de la raíz
+          path: '.'  # Subir todo el contenido de la raíz del repositorio
 
-      # Paso 5: Desplegar a GitHub Pages
+      # Paso 5: Desplegar el contenido a GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4  # Despliega el contenido en GitHub Pages
