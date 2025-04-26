@@ -1,10 +1,17 @@
 /* Estilo general del body */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f4;
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 /* Estilo del navbar */
@@ -15,6 +22,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -29,10 +37,12 @@ body {
   text-decoration: none;
   margin-left: 20px;
   font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-container a:hover {
   color: #3498db;
+  transform: scale(1.1); /* Agrandar al pasar el cursor */
 }
 
 /* Estilo del header */
@@ -40,8 +50,10 @@ header {
   background-color: #2c3e50;
   color: #fff;
   text-align: center;
-  padding: 80px 20px 40px; /* Aumenté el padding superior para dar espacio al navbar */
+  padding: 80px 20px 40px;
   position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Ajusta el margen superior para no tapar el contenido por el navbar fijo */
 }
 
 header h1 {
@@ -73,21 +85,6 @@ header .contact-info a:hover {
   color: #3498db;
 }
 
-/* Ajuste de la visibilidad y estilo del teléfono y correo */
-header .contact-info p {
-  display: inline-block;
-  margin: 0;
-}
-
-header .contact-info span {
-  color: #bdc3c7;
-}
-
-header .contact-info .icon {
-  margin-right: 5px;
-  color: #3498db;
-}
-
 /* Secciones */
 section {
   max-width: 900px;
@@ -96,6 +93,7 @@ section {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px; /* Añadir margen superior para separar del header */
 }
 
 /* Títulos */
@@ -115,9 +113,54 @@ ul li::before {
   font-weight: bold;
 }
 
-/* Contacto e idiomas */
+/* Ajustes para el contenedor de contacto */
 .contacto, .idiomas {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+/* Eliminar estilo de botón y mostrar solo enlaces */
+header .contact-info a {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: #ecf0f1;
+  font-size: 1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .contact-info a:hover {
+  color: #3498db;
+  transform: scale(1.05);
+  text-decoration: underline; /* Añadir subrayado al pasar el cursor */
+}
+
+/* Media queries para mejorar la visibilidad en móviles */
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: center;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .contacto, .idiomas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto ul, .idiomas ul {
+    flex-direction: column;
+  }
 }
