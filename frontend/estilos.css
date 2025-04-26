@@ -136,57 +136,55 @@ header .contact-info a:hover {
   text-decoration: underline; /* Añadir subrayado al pasar el cursor */
 }
 
-/* Media queries para mejorar la visibilidad en móviles (430x932) */
+/* Media queries para mejorar la visibilidad en móviles */
 @media (max-width: 430px) {
-  /* Navbar: Asegurar que los enlaces estén centrados */
+  /* Navbar: Asegurar que los enlaces estén centrados y con un tamaño adecuado */
   .navbar-container {
     justify-content: center;
-    padding: 0 10px; /* Reducir el espaciado en los laterales */
+    padding: 0 10px;
   }
 
   /* Ajustar el tamaño de los enlaces del navbar para pantallas pequeñas */
   .navbar-container a {
-    font-size: 0.55em; /* Reducir aún más el tamaño de la fuente */
-    margin-left: 10px; /* Reducir el espaciado entre los enlaces */
+    font-size: 0.5em; /* Reducción aún más del tamaño de la fuente */
+    margin-left: 5px; /* Reducir el espaciado entre los enlaces */
   }
 
   /* Sección: Ajustar márgenes y padding para adaptarse mejor en pantallas pequeñas */
   section {
-    margin: 10px 5px; /* Márgenes más pequeños para evitar espacios grandes */
+    margin: 10px 5px; /* Márgenes más pequeños */
     padding: 15px;
   }
 
   /* Ajustar el tamaño del título para que se vea bien en pantallas pequeñas */
   header h1 {
-    font-size: 1.8em; /* Tamaño aún más pequeño que el anterior */
-    margin-bottom: 10px; /* Reducir el espacio debajo del título */
+    font-size: 1.8em; /* Tamaño reducido */
+    margin-bottom: 10px;
   }
 
   /* Ajustar el tamaño del texto para mejor legibilidad */
   header p {
-    font-size: 0.9em;
-    line-height: 1.4; /* Mejorar la legibilidad con mayor espacio entre líneas */
+    font-size: 1em;
+    line-height: 1.4;
   }
 
   /* Modificar las secciones de contacto e idiomas para que se muestren de forma vertical */
   .contacto, .idiomas {
     flex-direction: column;
     align-items: center;
-    padding: 0 8px; /* Reducir el padding para ajustarse al tamaño */
+    padding: 0 5px;
   }
 
   /* Listas dentro de las secciones de contacto e idiomas deben apilarse verticalmente */
   .contacto ul, .idiomas ul {
     flex-direction: column;
-    padding-left: 0; /* Eliminar el padding extra para listas más compactas */
-    margin-top: 8px; /* Espaciado adicional entre los elementos de la lista */
+    padding-left: 0;
+    margin-top: 5px;
   }
 
   /* Evitar que las imágenes o elementos desborden en pantallas pequeñas */
   img, video {
-    max-width: 100%; /* Hacer que las imágenes y videos no se desborden */
+    max-width: 100%;
     height: auto;
   }
 }
-
-
