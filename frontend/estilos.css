@@ -188,3 +188,89 @@ header .contact-info a:hover {
     height: auto;
   }
 }
+
+  :root {
+    --icon-size: 1.5rem; /* Tamaño más pequeño para los íconos */
+    --gap-size: 20px; /* Menor espacio entre los íconos */
+    --text-color: #2c3e50;
+    --highlight-color: #3498db;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: var(--gap-size);
+    padding: 0;
+    margin: 0;
+  }
+
+  .grid-layout li {
+    text-align: center;
+    padding: 10px; /* Reducir el padding */
+    border-radius: 8px; /* Esquinas más redondeadas */
+  }
+
+  .grid-layout i {
+    font-size: var(--icon-size);
+    margin-bottom: 8px; /* Espacio reducido entre íconos y texto */
+  }
+
+  .grid-layout li span {
+    font-size: 1rem; /* Tamaño de texto reducido */
+    color: var(--text-color);
+    font-weight: 500; /* Menor peso de fuente */
+    display: block;
+    margin-top: 5px; /* Espacio reducido entre el ícono y el texto */
+  }
+
+  /* Colores personalizados */
+  .js-icon { color: #f7df1e; }
+  .sql-icon { color: #f1c40f; }
+  .c-icon { color: #007acc; }
+  .python-icon { color: #306998; }
+  .cpp-icon { color: #005c5c; }
+  .csharp-icon { color: #68217a; }
+  .php-icon { color: #8e44ad; }
+  .bash-icon { color: #2c3e50; }
+  .java-icon { color: #f8981d; }
+
+  .react-icon { color: #61dafb; }
+  .angular-icon { color: #dd1b16; }
+  .node-icon { color: #8cc84b; }
+  .laravel-icon { color: #3c5a99; }
+
+  .postgres-icon { color: #3b5998; }
+  .mysql-icon { color: #00758f; }
+  .mongodb-icon { color: #4caf50; }
+
+  .docker-icon { color: #2496ed; }
+  .git-icon { color: #f14e32; }
+  .gitlab-icon { color: #e74c3c; }
+
+  .postman-icon { color: #f39c12; }
+  .api-icon { color: #e67e22; }
+
+  .scrum-icon { color: #8e44ad; }
+  .tasks-icon { color: #2ecc71; }
+
+  .secure-dev-icon { color: #d35400; }
+  .info-sec-icon { color: #16a085; }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .grid-layout {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-layout {
+      grid-template-columns: 1fr;
+    }
+  }
