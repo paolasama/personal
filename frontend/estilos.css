@@ -146,7 +146,7 @@ header .contact-info a:hover {
 
   /* Ajustar el tamaño de los enlaces del navbar para pantallas pequeñas */
   .navbar-container a {
-    font-size: 0.6em; /* Reducción del tamaño de la fuente */
+    font-size: 0.7em; /* Tamaño de la fuente */
     margin-left: 5px; /* Reducir el espaciado entre los enlaces */
   }
 
