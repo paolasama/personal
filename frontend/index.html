@@ -3,172 +3,375 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Paola Samaniego</title>
-  <link rel="stylesheet" href="estilos.css"> <!-- Asegúrate de tener los estilos bien definidos -->
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2942/2942821.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Para los íconos -->
+  <title>Paola Samaniego | Fullstack Developer & Security Specialist</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/kanji-icon.png">
 </head>
 
 <body>
+  <!-- Barra de navegación -->
   <nav class="navbar">
-    <div class="navbar-container">
-      <a href="#acerca">Acerca de mí</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#educacion">Educación</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#competencias">Competencias</a>
-      <a href="#idiomas">Idiomas</a>
+    <div class="container">
+      <div class="navbar-brand">
+        <span class="kanji">技</span>
+        <span>Paola Samaniego</span>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="navbar-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </div>
   </nav>
-  
 
-  <header>
-    <h1>Paola Samaniego</h1>
-    <p>Desarrolladora Fullstack | React - Node.js - PostgreSQL | Ciberseguridad</p>
-    <p>Culiacán, Sinaloa</p>
-    <div class="contact-info">
-      <!-- Enlace a WhatsApp -->
-      <p><a href="https://wa.me/526674294569" target="_blank"><span class="icon"><i class="fab fa-whatsapp"></i></span> </a>
-      
-      <!-- Enlace a correo electrónico -->
-      <a href="mailto:mp.samaniego20@info.uas.edu.mx"><span class="icon"><i class="fas fa-envelope"></i></span> </a>
-      
-      <!-- Enlaces con íconos de GitHub y LinkedIn -->
-      <p>
-        <a href="https://github.com/paolasama" target="_blank"><span class="icon"><i class="fab fa-github"></i></span> GitHub</a> |
-        <a href="https://linkedin.com/in/paola-samaniego21" target="_blank"><span class="icon"><i class="fab fa-linkedin"></i></span> LinkedIn</a>
-      
-      <!-- Enlace para ver el CV -->
-      <a href="https://drive.google.com/file/d/19YRyHPA_Gg0zCwjGkVoqFP8YCQPTspld/view?usp=sharing" target="_blank"><span class="icon"><i class="fas fa-file-pdf"></i></span> CV</a>
+  <!-- Sección Hero -->
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="japanese-title">技術のポートフォリオ</h1>
+        <h2>Paola Samaniego</h2>
+        <p class="subtitle">Desarrolladora Fullstack | Especialista en Ciberseguridad</p>
+        <div class="hero-links">
+          <a href="#contacto" class="btn btn-primary">Contactar</a>
+          <a href="https://drive.google.com/file/d/18lJDwPChSdpsXSDhFjH0Bc2ROodOKu6o/view?usp=sharing" class="btn btn-outline">Ver CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="japanese-border"></div>
+      </div>
     </div>
   </header>
 
-  <section id="acerca">
-    <h2>Acerca de mí</h2>
-    <p>
-      Soy desarrolladora Fullstack. Durante mi formación universitaria desarrollé proyectos utilizando HTML, CSS, PHP, Angular y Laravel. Además, complementé mi aprendizaje con prácticas en React, Node.js y PostgreSQL. Me especializo en crear aplicaciones web seguras, eficientes y escalables, enfocándome en la optimización de rendimiento de software y bases de datos. También aplico metodologías ágiles como Scrum e incorporo principios de ciberseguridad en cada proyecto que realizo.
-    </p>  
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="kanji">能</span> Habilidades Técnicas</h2>
+      
+      <div class="skills-categories">
+        <!-- Lenguajes de Programación -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Lenguajes</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript/TypeScript</span>
+              <div class="skill-level" data-level="95"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-php"></i>
+              <span>PHP</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-terminal"></i>
+              <span>Bash</span>
+              <div class="skill-level" data-level="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks y Librerías -->
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-angular"></i>
+              <span>Angular</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+              <div class="skill-level" data-level="88"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-laravel"></i>
+              <span>Laravel</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bases de Datos -->
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>PostgreSQL</span>
+              <div class="skill-level" data-level="92"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-leaf"></i>
+              <span>MongoDB</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps y Ciberseguridad -->
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> DevOps & Security</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+              <div class="skill-level" data-level="95"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-gitlab"></i>
+              <span>GitLab CI/CD</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>OWASP Top 10</span>
+              <div class="skill-level" data-level="85"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-lock"></i>
+              <span>JWT/Auth</span>
+              <div class="skill-level" data-level="88"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Otras Habilidades -->
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Otras Competencias</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-terminal"></i>
+              <span>Linux/Bash</span>
+              <div class="skill-level" data-level="80"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-plug"></i>
+              <span>REST APIs</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-vial"></i>
+              <span>Testing (Jest)</span>
+              <div class="skill-level" data-level="75"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-chart-bar"></i>
+              <span>Power BI</span>
+              <div class="skill-level" data-level="70"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-project-diagram"></i>
+              <span>Scrum/Kanban</span>
+              <div class="skill-level" data-level="90"></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Documentación</span>
+              <div class="skill-level" data-level="95"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="experiencia">
-    <h2>Experiencia Profesional</h2>
-    <h3>Desarrolladora Fullstack | Nexgen Systems</h3>
-    <p>Ene 2025 – Jun 2025</p>
-    <ul>
-      <li>Desarrollé e implementé una aplicación web con React y Node.js, reduciendo tiempos de carga en un 30%.</li>
-      <li>Optimizaciones avanzadas en PostgreSQL, mejorando rendimiento en un 40%.</li>
-      <li>Lideré el equipo usando Scrum, mejorando organización y puntualidad.</li>
-    </ul>
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title"><span class="kanji">作</span> Proyectos</h2>
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('assets/project1.jpg');"></div>
+          <div class="project-content">
+            <h3>sistemadistribuido</h3>
+            <p>una terminal como proyecto de 3 integrantes</p>
+            <div class="project-tech">
+              <span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paolasama/sistemadistribuido" class="btn btn-small"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('assets/project2.jpg');"></div>
+          <div class="project-content">
+            <h3>saludproyect</h3>
+            <p>un trabajo hecho individual para ayuda a la persona con información su registro medico (esta mantenimiento no se puede usar)</p>
+            <div class="project-tech">
+              <span>android studio</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paolasama/saludproyect" class="btn btn-small"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn btn-small btn-outline">Docs</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('assets/project3.jpg');"></div>
+          <div class="project-content">
+            <h3>tiendaproyect</h3>
+            <p>esta pagina te ayuda en registrar medicación, alergias, notas médicas para uso personal (esta mantenimiento no se puede usar)</p>
+            <div class="project-tech">
+              <span>Spring Boot</span>
+              <span>Angular</span>
+              <span>Microservicios</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paolasama/tiendaproyect" class="btn btn-small"><i class="fab fa-github"></i> Código</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="educacion">
-    <h2>Educación</h2>
-    <p><strong>Universidad Autónoma de Sinaloa</strong> (2020 - 2025)</p>
-    <p>Licenciatura en Informática</p>
-    <p>Proyecto destacado: Desarrollo de plataforma web segura para gestión académica universitaria.</p>
+  <!-- Sección Experiencia -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="kanji">経</span> Experiencia</h2>
+      
+      <div class="timeline">
+        <!-- Experiencia 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">enero-2025 - mayo-2025</div>
+          <div class="timeline-content">
+            <h3>Desarrolladora Fullstack</h3>
+            <h4>Nexgen Systems</h4>
+            <ul>
+              <li>Desarrollé la interfaz con React, mejorando velocidad y usabilidad.</li>
+              <li>Colaboré en backend y optimización de bases de datos.</li>
+              <li>Lideré equipo con Scrum, mejorando entregas.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+              <span>Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  </head>
-  
-  <section id="habilidades">
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <!-- Lenguajes -->
-      <li>
-        <i class="fas fa-code"></i> Lenguajes:
-        <ul class="grid-layout">
-          <li><i class="fab fa-js-square js-icon"></i><span>JavaScript</span></li>
-          <li><i class="fas fa-database sql-icon"></i><span>SQL</span></li>
-          <li><i class="fas fa-code c-icon"></i><span>C</span></li>
-          <li><i class="fab fa-python python-icon"></i><span>Python</span></li>
-          <li><i class="fas fa-code cpp-icon"></i><span>C++</span></li>
-          <li><i class="fas fa-code csharp-icon"></i><span>C#</span></li>
-          <li><i class="fab fa-php php-icon"></i><span>PHP</span></li>
-          <li><i class="fas fa-terminal bash-icon"></i><span>Bash</span></li>
-          <li><i class="fab fa-java java-icon"></i><span>Java</span></li>
-        </ul>
-      </li>
-  
-      <!-- Frameworks -->
-      <li>
-        <i class="fas fa-laptop-code"></i> Frameworks:
-        <ul class="grid-layout">
-          <li><i class="fab fa-react react-icon"></i><span>React</span></li>
-          <li><i class="fab fa-angular angular-icon"></i><span>Angular</span></li>
-          <li><i class="fab fa-js js-icon"></i><span>TypeScript</span></li>
-          <li><i class="fab fa-node node-icon"></i><span>Node.js</span></li>
-          <li><i class="fab fa-laravel laravel-icon"></i> <span>Laravel</span></li>    
-        </ul>
-      </li>
-  
-      <!-- Bases de Datos -->
-      <li>
-        <i class="fas fa-database"></i> Bases de datos:
-        <ul class="grid-layout">
-          <li><i class="fas fa-database postgres-icon"></i><span>PostgreSQL</span></li>
-          <li><i class="fas fa-database mysql-icon"></i><span>MySQL</span></li>
-          <li><i class="fas fa-leaf mongodb-icon"></i><span>MongoDB</span></li>
-        </ul>
-      </li>
-  
-      <!-- DevOps -->
-      <li>
-        <i class="fas fa-server"></i> DevOps:
-        <ul class="grid-layout">
-          <li><i class="fab fa-docker docker-icon"></i><span>Docker</span></li>
-          <li><i class="fab fa-git-alt git-icon"></i><span>Git</span></li>
-          <li><i class="fab fa-gitlab gitlab-icon"></i><span>GitLab CI/CD</span></li>
-        </ul>
-      </li>
-  
-      <!-- Herramientas -->
-      <li>
-        <i class="fas fa-tools"></i> Herramientas:
-        <ul class="grid-layout">
-          <li><i class="fas fa-envelope-open-text postman-icon"></i><span>Postman</span></li>
-          <li><i class="fas fa-plug api-icon"></i><span>APIs REST</span></li>
-        </ul>
-      </li>
-  
-      <!-- Metodologías -->
-      <li>
-        <i class="fas fa-project-diagram"></i> Metodologías:
-        <ul class="grid-layout">
-          <li><i class="fas fa-users scrum-icon"></i><span>Scrum</span></li>
-          <li><i class="fas fa-tasks tasks-icon"></i><span>Control de tareas y avances</span></li>
-        </ul>
-      </li>
-  
-      <!-- Ciberseguridad -->
-      <li>
-        <i class="fas fa-shield-alt"></i> Ciberseguridad:
-        <ul class="grid-layout">
-          <li><i class="fas fa-lock secure-dev-icon"></i><span>Desarrollo seguro</span></li>
-          <li><i class="fas fa-user-shield info-sec-icon"></i><span>Seguridad de la información</span></li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  
-  <section id="competencias">
-    <h2>Competencias Profesionales</h2>
-    <ul>
-      <li>Desarrollo web Fullstack</li>
-      <li>Ciberseguridad de aplicaciones</li>
-      <li>Optimización de bases de datos</li>
-      <li>Gestión ágil de proyectos (Scrum)</li>
-    </ul>
+  <!-- Sección Contacto -->
+  <section id="contacto" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title"><span class="kanji">連</span> Contacto</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:mp.samaniego20@info.uas.edu.mx">mp.samaniego20@info.uas.edu.mx</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/526674294569">+52 667 429 4569</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/paolasama">github.com/paolasama</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/paola-samaniego21">linkedin.com/in/paola-samaniego21</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Culiacán, Sinaloa, México</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Asunto">
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <section id="idiomas">
-    <h2>Idiomas</h2>
-    <ul>
-      <li>Español (Nativo)</li>
-      <li>Inglés (Nivel TOEFL A2 - en curso de mejora)</li>
-    </ul>
-  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="kanji">技</span>
+          <span>Paola Samaniego</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/paolasama" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/paola-samaniego21" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/526674294569" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:mp.samaniego20@info.uas.edu.mx"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Paola Samaniego. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
