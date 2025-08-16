@@ -492,20 +492,30 @@ img {
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
+  margin-top: 1rem; /* Baja un poco todas las cards */
 }
 
+
 .timeline-date {
-  position: absolute;
-  top: 0;
+  position: relative;
+  display: inline-block; /* se ajusta al contenido */
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 0.75rem; /* más espacio con la card */
+  
   background-color: var(--primary);
   color: var(--light);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
+  
+  padding: 0.4rem 1.2rem; /* un poco más estilizado */
+  border-radius: 999px; /* completamente redondo */
   font-weight: 600;
-  box-shadow: var(--shadow-sm);
+  font-size: 0.95rem; /* tamaño ligeramente más elegante */
+  letter-spacing: 0.3px; /* mejora legibilidad */
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* más suave y moderno */
+  white-space: nowrap; /* evita que se parta en dos líneas */
 }
+
 
 .timeline-content {
   background-color: var(--light);
@@ -514,7 +524,9 @@ img {
   box-shadow: var(--shadow-sm);
   position: relative;
   width: calc(50% - 2rem);
+  margin-top: 1.5rem; /* 📌 separa la card de la fecha */
 }
+
 
 .timeline-item:nth-child(odd) .timeline-content {
   margin-left: auto;
